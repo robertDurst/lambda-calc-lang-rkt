@@ -2,4 +2,4 @@
 
 test:
 	@echo "Running tests..."
-	@racket test-hello.rkt
+	@racket test-compiler.rkt
