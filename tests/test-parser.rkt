@@ -1,6 +1,7 @@
 #lang racket
 
-(require rackunit rackunit/text-ui "compiler.rkt")
+(require rackunit rackunit/text-ui "../src/parser.rkt")
+(require "../src/common/terms.rkt")
 
 (define parse-tests
   (test-suite

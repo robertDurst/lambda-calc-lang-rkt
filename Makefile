@@ -2,4 +2,7 @@
 
 test:
 	@echo "Running tests..."
-	@racket test-compiler.rkt
+	@for test in tests/test-*.rkt; do \
+		echo "Running $$test..."; \
+		racket "$$test"; \
+	done
