@@ -1,7 +1,5 @@
 #lang typed/racket
 
-(require "string-utils.rkt")
-
 (provide parse parse-term variable abstraction application)
 
 (struct variable ([name : String]) #:transparent)
@@ -37,6 +35,6 @@
 
 (: parse-application (-> String application))
 (define (parse-application input)
-  (define split-input (split input))
+  (define split-input (string-split input " "))
   (application (first split-input) (second split-input)))
 
